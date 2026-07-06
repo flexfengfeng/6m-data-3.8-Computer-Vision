@@ -1,6 +1,6 @@
 # Lesson — L08 Computer Vision & Convolutional Neural Networks
 
-> **Chapter 8 of the NorthStar Retail story.** *Sarah Chen · Customer Experience Analyst · Mid-year, post-L07.*
+> **Chapter 8 of the NorthStar Retail story.** *Sarah Chen · Customer Experience Analyst · Week 9.*
 > Sarah's L07 neural network for checkout-completion has shipped. Then Marcus walks over: *"Our merchandising team uploads thousands of new product photos every season. Can we auto-tag them as 'dress', 'shirt', 'sneaker' so the catalogue search works on day one?"*
 > Same network playbook from L07 — but pixels are not tabular features. This lesson is how Sarah rebuilds her toolkit for images.
 
@@ -50,6 +50,39 @@ Before you decide whether to train from scratch, extract features, or fine-tune,
 3. **Have I matched the pretrained model's preprocessing contract?** ImageNet normalisation stats, RGB (3-channel) inputs, an input resolution the backbone was designed for. If you skip this, your "transfer-learning baseline" is measuring preprocessing bugs, not the model.
 
 Skip any of these and you will reach for fine-tuning when feature extraction would suffice, or report a from-scratch CNN as "better than transfer learning" when really your preprocessing was wrong.
+
+---
+
+## Key concepts — plain-English review
+
+Use this as a self-check before the review questions: read each concept, and if any feels fuzzy, jump back to the notebook or section that teaches it.
+
+**Pixels as numbers** — A photo is just a grid of numbers (brightness per pixel, three grids for colour). To a model, "image" means "big table of numbers with a spatial layout".
+*Real-world use:* A hospital X-ray is a grid of grey values — that's all the pneumonia-detection model ever sees.
+
+**Convolution / kernel** — A tiny window of weights (say 3×3) slides across the image, looking for one pattern — an edge, a corner — everywhere it goes. Nine numbers replace millions.
+*Real-world use:* Phone cameras use the same sliding-window idea to sharpen photos and detect faces in the frame.
+
+**Feature map** — The output of one kernel's sweep: a new grid showing *where* in the image that pattern was found. Each kernel makes its own map.
+*Real-world use:* A self-driving car's "lane-line map" — a layer that lights up wherever painted lines appear.
+
+**Pooling** — Shrinking a feature map by keeping only the strongest signal in each small block. The network keeps "an edge is around here" and drops "at exactly pixel 47" — cheaper and more robust.
+*Real-world use:* A warehouse quality-scanner still spots a dent whether it's centred or slightly off — pooling makes position not matter.
+
+**CNN (convolutional neural network)** — Stacks of `Conv → ReLU → Pool` blocks: early layers find edges, middle layers find parts, deep layers find whole objects. Same L07 training loop, new architecture.
+*Real-world use:* NorthStar's auto-tagger classifying product photos as dress / shirt / sneaker — and postal services reading handwritten postcodes.
+
+**Transfer learning** — Start from a network someone already trained on 1.2M photos, keep its visual "vocabulary", and train only a small new final layer on your data.
+*Real-world use:* A farm startup with 800 photos of diseased leaves fine-tunes an off-the-shelf model instead of collecting a million images.
+
+**Fine-tuning** — When your images look quite different from the pretrained ones, gently retrain the last few layers too — with a tiny learning rate, so you adjust rather than erase what was learned.
+*Real-world use:* Adapting an everyday-photo model to read satellite images for flood-insurance assessment.
+
+**GPU vs CPU** — A CPU does a few things fast in sequence; a GPU does thousands of small multiplications at once — exactly what image models need. Training that takes hours on CPU takes minutes on GPU.
+*Real-world use:* Why video-game graphics cards became the workhorse of every AI lab and cloud provider.
+
+**Training–serving skew (preprocessing contracts)** — The model only works if real-world inputs are prepared *exactly* like the training inputs — same size, colour channels, normalisation. Mismatches fail silently.
+*Real-world use:* A retailer's tagger that trained on studio photos quietly misfires on customers' dim phone snaps — same model, different preparation.
 
 ---
 
