@@ -27,17 +27,20 @@ By the end of L08 you will be able to:
 - Watch the [How AI Learn to see](https://youtu.be/jBGYGwABXeQ) (~5 min)
 - Read [pre-class.md](pre-class.md)
 - Watch the linked 3Blue1Brown convolution video
+- Explore the [**interactive key-concepts page**](https://su-ntu-ctp.github.io/6m-data-3.8-Computer-Vision/) after the videos (GitHub Pages)
 - Run [notebooks/01_monday_morning.ipynb](notebooks/01_monday_morning.ipynb) — flatten Fashion-MNIST, train an MLP, and feel the parameter explosion
 
-## Phase 2 — In-class (≈ 90 min lecture + 90 min code-along)
+## Phase 2 — In-class (≈ 45–60 min slide recap + 90 min code-along + 15 min exit survey)
 
-- Concept walkthrough: instructor uses the [**interactive key-concepts walkthrough →**](https://su-ntu-ctp.github.io/6m-data-3.8-Computer-Vision/) (revisit any time)
+- Concept recap with slides (~45–60 min): instructor recaps the key concepts — you already explored the [interactive key-concepts walkthrough](https://su-ntu-ctp.github.io/6m-data-3.8-Computer-Vision/) pre-class (revisit any time)
 - Code-along notebooks (in order):
   - [02_convolutions_intuition.ipynb](notebooks/02_convolutions_intuition.ipynb) — manual kernels & feature maps
   - [03_first_cnn.ipynb](notebooks/03_first_cnn.ipynb) — a tiny CNN that beats the MLP
   - [04_transfer_learning.ipynb](notebooks/04_transfer_learning.ipynb) — pretrained ResNet18 on small data
 
 > **Don't have a GPU?** L08 runs end-to-end on CPU (~30 min for the CIFAR + ResNet18 fine-tune), but on a T4 GPU in Colab it's ~2 min. Each notebook has an **Open in Colab** badge at the top — click it, then **Runtime → Change runtime type → T4 GPU**:
+
+- Class exit survey (~15 min): quick feedback to close the session
 
 ## Phase 3 — Post-class (self-study, optional)
 
@@ -54,7 +57,7 @@ By the end of L08 you will be able to:
 | `lesson.md`              | Short reference: overview, takeaways, transfer-learning checklist, review Q&A, L09→L10 course map |
 | `reference.md`           | Glossary of 20 CV/CNN terms |
 | `environment.yml`        | Conda env spec |
-| `docs/index.html`        | Interactive key-concepts walkthrough (GitHub Pages) |
+| `docs/index.html`        | Interactive key-concepts page — explore during pre-class (GitHub Pages) |
 | `notebooks/`             | 4 in-class NBs + assignment + extensions + data |
 
 ---
