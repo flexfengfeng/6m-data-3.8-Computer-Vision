@@ -12,7 +12,7 @@ This document is a **short reference** — the lesson itself is taught in the no
 
 | Stage | Where to go |
 |---|---|
-| **Pre-class** | `pre-class.md` + `notebooks/01_monday_morning.ipynb` |
+| **Pre-class** | `pre-class.md` + `notebooks/01_morning_briefing.ipynb` |
 | **In-class — Part 1: Convolutions intuition** | `notebooks/02_convolutions_intuition.ipynb` |
 | **In-class — Part 2: Build your first CNN** | `notebooks/03_first_cnn.ipynb` |
 | **In-class — Part 3: Transfer learning** | `notebooks/04_transfer_learning.ipynb` |
