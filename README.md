@@ -28,7 +28,7 @@ By the end of L08 you will be able to:
 - Read [pre-class.md](pre-class.md)
 - Watch the linked 3Blue1Brown convolution video
 - Explore the [**interactive key-concepts page**](https://su-ntu-ctp.github.io/6m-data-3.8-Computer-Vision/) after the videos (GitHub Pages)
-- Run [notebooks/01_monday_morning.ipynb](notebooks/01_monday_morning.ipynb) — flatten Fashion-MNIST, train an MLP, and feel the parameter explosion
+- Run [notebooks/01_morning_briefing.ipynb](notebooks/01_morning_briefing.ipynb) — flatten Fashion-MNIST, train an MLP, and feel the parameter explosion
 
 ## Phase 2 — In-class (≈ 45–60 min slide recap + 90 min code-along + 15 min exit survey)
 

@@ -7,7 +7,7 @@ This is the simplest version of "show up prepared": watch a short intro, run one
 | Step | Time | What you do |
 |---|---|---|
 | **0. Watch** | ~5 min  | Watch the [lesson intro video](https://youtu.be/jBGYGwABXeQ) |
-| **1. Try it** | ~20 min | Open and run `notebooks/01_monday_morning.ipynb` |
+| **1. Try it** | ~20 min | Open and run `notebooks/01_morning_briefing.ipynb` |
 | **2. Reflect** | ~5 min  | Three short questions below |
 
 ---
@@ -16,7 +16,7 @@ This is the simplest version of "show up prepared": watch a short intro, run one
 
 ▶️ **[L08 How AI learn to see](https://youtu.be/jBGYGwABXeQ)**
 
-A short orientation to the week: why images break the flattened-features approach from L07, and what Sarah is about to build for Marcus's product-photo auto-tagging request. Watch it before opening the notebook.
+A short orientation to the day: why images break the flattened-features approach from L07, and what Sarah is about to build for Marcus's product-photo auto-tagging request. Watch it before opening the notebook.
 
 🕹️ **After the video:** open the [interactive key-concepts page](https://su-ntu-ctp.github.io/6m-data-3.8-Computer-Vision/) and play with it for 10–15 minutes. Drag the sliders, click the buttons — you can't break anything. Arriving in class having *seen* these ideas move makes the session far easier.
 
@@ -24,7 +24,7 @@ A short orientation to the week: why images break the flattened-features approac
 
 ## Step 1 — Try it (~20 min)
 
-Open **`notebooks/01_monday_morning.ipynb`** in VS Code with the `dsai-m3` kernel. Run every cell top to bottom. Read the markdown between cells. Don't skip any cell.
+Open **`notebooks/01_morning_briefing.ipynb`** in VS Code with the `dsai-m3` kernel. Run every cell top to bottom. Read the markdown between cells. Don't skip any cell.
 
 Marcus's next ask: *"Can we auto-tag the 10,000 product photos uploaded each season?"* The notebook starts with Fashion-MNIST and shows what an MLP can do on flattened pixels (~87% accuracy, but lots of parameters). It then sets up the CNN motivation that you'll explore in class.
 

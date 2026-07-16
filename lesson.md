@@ -1,6 +1,6 @@
 # Lesson — L08 Computer Vision & Convolutional Neural Networks
 
-> **Chapter 8 of the NorthStar Retail story.** *Sarah Chen · Customer Experience Analyst · Week 9.*
+> **Chapter 8 of the NorthStar Retail story.** *Sarah Chen · Customer Experience Analyst · Day 9.*
 > Sarah's L07 neural network for checkout-completion has shipped. Then Marcus walks over: *"Our merchandising team uploads thousands of new product photos every season. Can we auto-tag them as 'dress', 'shirt', 'sneaker' so the catalogue search works on day one?"*
 > Same network playbook from L07 — but pixels are not tabular features. This lesson is how Sarah rebuilds her toolkit for images.
 
@@ -12,7 +12,7 @@ This document is a **short reference** — the lesson itself is taught in the no
 
 | Stage | Where to go |
 |---|---|
-| **Pre-class** | `pre-class.md` + `notebooks/01_monday_morning.ipynb` |
+| **Pre-class** | `pre-class.md` + `notebooks/01_morning_briefing.ipynb` |
 | **In-class — Part 1: Convolutions intuition** | `notebooks/02_convolutions_intuition.ipynb` |
 | **In-class — Part 2: Build your first CNN** | `notebooks/03_first_cnn.ipynb` |
 | **In-class — Part 3: Transfer learning** | `notebooks/04_transfer_learning.ipynb` |
